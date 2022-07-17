@@ -10,15 +10,131 @@
 
 /* typography */
 
-
+font-size: 15px;
+font-family: 'Poppins';
+--light: 200;
+--regular: 400;
+--strong: 600;
 
 /* color pallette */
 
+--red: hsl(0, 78%, 62%);
+--cyan: hsl(180, 62%, 55%);
+--orange: hsl(34, 97%, 64%);
+--blue: hsl(212, 86%, 64%);
 
+--very-dark-blue: hsl(234, 12%, 34%);
+--grayish-blue: hsl(229, 6%, 66%);
+--very-light-gray: hsl(0, 0%, 98%);
+--white: #fff;
 
 } 
 
 
-main {
 
+p {
+    color: var(--grayish-blue)
+}
+
+body {
+    width: 100vw;
+    display: flex;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header p {
+    width: 32.5ch;
+}
+
+main {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100vw;
+    background: var(--very-light-gray);
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 3rem;
+
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--grayish-blue);
+    margin-bottom: 1rem;
+}
+
+header h2 {
+    font-weight: var(--strong);
+    margin-bottom: 1.25rem;
+}
+
+header p {
+    font-weight: var(--regular);
+    line-height: 1.5;
+}
+
+section {
+    box-shadow: 4px 4px 6px;
+    background: var(--white);
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+h3 {
+    display: block;
+    font-weight: var(--strong);
+    margin-bottom: .75rem;
+}
+
+section p {
+    display: block;
+    line-height: 1rem;
+    font-weight: var(--light);
+    width: minmax(28ch, 32ch);
+    line-height: 2.0;
+    margin-bottom: 6.75rem;
+}
+
+image {
+    align-self: flex-end;
+}
+
+.supervisor {
+    border-top: solid .35rem var(--cyan);
+    background-image: url('./images/icon-supervisor.svg');
+    background-size: 4.5rem;
+    background-repeat: no-repeat;
+    background-position: right 2rem bottom 2rem;
+}
+
+.team-builder {
+    border-top: solid .35rem var(--red);
+    background-image: url('./images/icon-team-builder.svg');
+    background-size: 4.5rem;
+    background-repeat: no-repeat;
+    background-position: right 2rem bottom 2rem;
+    
+}
+
+.karma {
+    border-top: solid .35rem var(--orange);
+    background-image: url('./images/icon-karma.svg');
+    background-size: 4.5rem;
+    background-repeat: no-repeat;
+    background-position: right 2rem bottom 2rem;
+}
+
+.calculator {
+    border-top: solid .35rem var(--blue);
+    background-image: url('./images/icon-calculator.svg');
+    background-size: 4.5rem;
+    background-repeat: no-repeat;
+    background-position: right 2rem bottom 2rem;
 }
