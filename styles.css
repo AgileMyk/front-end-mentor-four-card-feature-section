@@ -149,8 +149,9 @@ image {
     main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: .75fr repeat(2, 1fr);
         padding: 2.5vw 5vw;
+        max-width: none;
     }
 
     header {
