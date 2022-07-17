@@ -139,11 +139,11 @@ image {
     background-position: right 2rem bottom 2rem;
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1440px) {
 
     body {
-        background: var(--very-light-gray)
-    };
+        background: var(--very-light-gray);
+    }
 
     main {
         display: grid;
